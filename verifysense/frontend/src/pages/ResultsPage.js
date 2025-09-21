@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircleIcon, XCircleIcon, ExclamationTriangleIcon, ArrowLeftIcon, ShareIcon, DocumentArrowDownIcon } from '@heroicons/react/24/outline';
+// Remove framer-motion if causing issues
+// import { motion, AnimatePresence } from 'framer-motion';
 
 function ResultsPage() {
   const [results, setResults] = useState(null);
@@ -338,22 +340,26 @@ function ResultsPage() {
       <div className="card mb-6">
         <h2 className="text-xl font-bold text-gray-900 mb-4">How We Checked This</h2>
         
-        <p className="text-gray-700 mb-4">{result.explanation.summary}</p>
+        <p className="text-gray-700 mb-4">
+          {result.explanation.summary}
+        </p>
         
-        <div className={`space-y-4 ${expandedExplanation ? '' : 'hidden'}`}>
-          {result.explanation.steps.map((step, index) => (
-            <div key={index} className="flex">
-              <div className="flex-shrink-0 mr-3">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-medium">
-                  {index + 1}
+        {expandedExplanation && (
+          <div className="space-y-4">
+            {result.explanation.steps.map((step, index) => (
+              <div key={index} className="flex">
+                <div className="flex-shrink-0 mr-3">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-medium">
+                    {index + 1}
+                  </div>
+                </div>
+                <div className="pt-1">
+                  <p className="text-gray-700">{step}</p>
                 </div>
               </div>
-              <div className="pt-1">
-                <p className="text-gray-700">{step}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
         
         <button
           onClick={() => setExpandedExplanation(!expandedExplanation)}
