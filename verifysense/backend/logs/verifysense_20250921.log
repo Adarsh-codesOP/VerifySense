@@ -1,0 +1,204 @@
+2025-09-21 21:26:23,565 - verifysense - INFO - New verification request: req_1758470183
+2025-09-21 21:26:23,565 - verifysense - INFO - Content type: url
+2025-09-21 21:26:29,256 - verifysense.claim - INFO - Claim detection for request req_1758470183
+2025-09-21 21:26:29,256 - verifysense.claim - INFO - Claim detection for request req_1758470183
+2025-09-21 21:26:29,256 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:26:29,256 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:26:29,256 - verifysense.claim - INFO - Claim 1: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-super-4-ind-pak-today-match-live-updates-suryakumar-yadav-kuldeep-yadav-10261955/
+2025-09-21 21:26:29,256 - verifysense.claim - INFO - Claim 1: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-super-4-ind-pak-today-match-live-updates-suryakumar-yadav-kuldeep-yadav-10261955/
+2025-09-21 21:26:29,262 - verifysense.factcheck - INFO - Fact-checking for request req_1758470183, claim: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-...
+2025-09-21 21:26:29,262 - verifysense.factcheck - INFO - Fact-checking for request req_1758470183, claim: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-...
+2025-09-21 21:26:29,262 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:26:29,262 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:27:04,358 - verifysense - INFO - New verification request: req_1758470224
+2025-09-21 21:27:04,359 - verifysense - INFO - Content type: url
+2025-09-21 21:27:04,778 - verifysense.claim - INFO - Claim detection for request req_1758470224
+2025-09-21 21:27:04,778 - verifysense.claim - INFO - Claim detection for request req_1758470224
+2025-09-21 21:27:04,779 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:27:04,779 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:27:04,779 - verifysense.claim - INFO - Claim 1: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-super-4-ind-pak-today-match-live-updates-suryakumar-yadav-kuldeep-yadav-10261955/
+2025-09-21 21:27:04,779 - verifysense.claim - INFO - Claim 1: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-super-4-ind-pak-today-match-live-updates-suryakumar-yadav-kuldeep-yadav-10261955/
+2025-09-21 21:27:04,781 - verifysense.factcheck - INFO - Fact-checking for request req_1758470224, claim: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-...
+2025-09-21 21:27:04,781 - verifysense.factcheck - INFO - Fact-checking for request req_1758470224, claim: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-...
+2025-09-21 21:27:04,782 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:27:04,782 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:27:33,906 - verifysense - INFO - New verification request: req_1758470253
+2025-09-21 21:27:33,908 - verifysense - INFO - Content type: url
+2025-09-21 21:27:34,933 - verifysense.claim - INFO - Claim detection for request req_1758470253
+2025-09-21 21:27:34,933 - verifysense.claim - INFO - Claim detection for request req_1758470253
+2025-09-21 21:27:34,934 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:27:34,934 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:27:34,934 - verifysense.claim - INFO - Claim 1: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-super-4-ind-pak-today-match-live-updates-suryakumar-yadav-kuldeep-yadav-10261955/
+2025-09-21 21:27:34,934 - verifysense.claim - INFO - Claim 1: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-super-4-ind-pak-today-match-live-updates-suryakumar-yadav-kuldeep-yadav-10261955/
+2025-09-21 21:27:34,935 - verifysense.factcheck - INFO - Fact-checking for request req_1758470253, claim: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-...
+2025-09-21 21:27:34,935 - verifysense.factcheck - INFO - Fact-checking for request req_1758470253, claim: https://indianexpress.com/article/sports/cricket/live-cricket-score-india-vs-pakistan-asia-cup-2025-...
+2025-09-21 21:27:34,936 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:27:34,936 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:33:42,332 - verifysense - INFO - New verification request: req_1758470622
+2025-09-21 21:33:42,333 - verifysense - INFO - Content type: url
+2025-09-21 21:33:44,471 - verifysense.claim - INFO - Claim detection for request req_1758470622
+2025-09-21 21:33:44,471 - verifysense.claim - INFO - Claim detection for request req_1758470622
+2025-09-21 21:33:44,472 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:33:44,472 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:33:44,473 - verifysense.claim - INFO - Claim 1: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwar-operation-under-way/articleshow/124028371.cms
+2025-09-21 21:33:44,473 - verifysense.claim - INFO - Claim 1: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwar-operation-under-way/articleshow/124028371.cms
+2025-09-21 21:33:44,842 - verifysense.factcheck - INFO - Fact-checking for request req_1758470622, claim: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwa...
+2025-09-21 21:33:44,842 - verifysense.factcheck - INFO - Fact-checking for request req_1758470622, claim: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwa...
+2025-09-21 21:33:44,843 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:33:44,843 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:40:15,645 - verifysense - INFO - New verification request: req_1758471015
+2025-09-21 21:40:15,646 - verifysense - INFO - Content type: url
+2025-09-21 21:40:17,742 - verifysense.claim - INFO - Claim detection for request req_1758471015
+2025-09-21 21:40:17,742 - verifysense.claim - INFO - Claim detection for request req_1758471015
+2025-09-21 21:40:17,743 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:40:17,743 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:40:17,744 - verifysense.claim - INFO - Claim 1: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwar-operation-under-way/articleshow/124028371.cms
+2025-09-21 21:40:17,744 - verifysense.claim - INFO - Claim 1: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwar-operation-under-way/articleshow/124028371.cms
+2025-09-21 21:40:18,117 - verifysense.factcheck - INFO - Fact-checking for request req_1758471015, claim: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwa...
+2025-09-21 21:40:18,117 - verifysense.factcheck - INFO - Fact-checking for request req_1758471015, claim: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwa...
+2025-09-21 21:40:18,119 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:40:18,119 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:40:20,077 - verifysense.scoring - INFO - Scoring for request req_1758471015, claim: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwa...
+2025-09-21 21:40:20,077 - verifysense.scoring - INFO - Scoring for request req_1758471015, claim: https://timesofindia.indiatimes.com/india/jk-encounter-breaks-out-between-army-terrorists-in-kishtwa...
+2025-09-21 21:40:20,078 - verifysense.scoring - INFO - Overall score: 48, Confidence: Mixed / Needs Verification
+2025-09-21 21:40:20,078 - verifysense.scoring - INFO - Overall score: 48, Confidence: Mixed / Needs Verification
+2025-09-21 21:40:20,079 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:40:20,079 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:40:20,080 - verifysense.scoring - INFO - Component score - source_reliability_score: 50
+2025-09-21 21:40:20,080 - verifysense.scoring - INFO - Component score - source_reliability_score: 50
+2025-09-21 21:40:20,081 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:40:20,081 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:40:20,082 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:40:20,082 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:40:20,082 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 50
+2025-09-21 21:40:20,082 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 50
+2025-09-21 21:40:20,083 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:40:20,083 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:40:20,084 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:40:20,084 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:40:55,057 - verifysense - INFO - New verification request: req_1758471055
+2025-09-21 21:40:55,059 - verifysense - INFO - Content type: url
+2025-09-21 21:40:55,565 - verifysense.claim - INFO - Claim detection for request req_1758471055
+2025-09-21 21:40:55,565 - verifysense.claim - INFO - Claim detection for request req_1758471055
+2025-09-21 21:40:55,567 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:40:55,567 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:40:55,573 - verifysense.claim - INFO - Claim 1: https://guides.lib.umich.edu/fakenews
+2025-09-21 21:40:55,573 - verifysense.claim - INFO - Claim 1: https://guides.lib.umich.edu/fakenews
+2025-09-21 21:40:55,870 - verifysense.factcheck - INFO - Fact-checking for request req_1758471055, claim: https://guides.lib.umich.edu/fakenews...
+2025-09-21 21:40:55,870 - verifysense.factcheck - INFO - Fact-checking for request req_1758471055, claim: https://guides.lib.umich.edu/fakenews...
+2025-09-21 21:40:55,872 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:40:55,872 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:41:00,326 - verifysense.scoring - INFO - Scoring for request req_1758471055, claim: https://guides.lib.umich.edu/fakenews...
+2025-09-21 21:41:00,326 - verifysense.scoring - INFO - Scoring for request req_1758471055, claim: https://guides.lib.umich.edu/fakenews...
+2025-09-21 21:41:00,326 - verifysense.scoring - INFO - Overall score: 49, Confidence: Mixed / Needs Verification
+2025-09-21 21:41:00,326 - verifysense.scoring - INFO - Overall score: 49, Confidence: Mixed / Needs Verification
+2025-09-21 21:41:00,327 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:41:00,327 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:41:00,328 - verifysense.scoring - INFO - Component score - source_reliability_score: 60.0
+2025-09-21 21:41:00,328 - verifysense.scoring - INFO - Component score - source_reliability_score: 60.0
+2025-09-21 21:41:00,329 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:41:00,329 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:41:00,329 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:41:00,329 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:41:00,330 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 40
+2025-09-21 21:41:00,330 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 40
+2025-09-21 21:41:00,332 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:41:00,332 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:41:00,333 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:41:00,333 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:41:35,297 - verifysense - INFO - New verification request: req_1758471095
+2025-09-21 21:41:35,297 - verifysense - INFO - Content type: url
+2025-09-21 21:41:37,221 - verifysense.claim - INFO - Claim detection for request req_1758471095
+2025-09-21 21:41:37,221 - verifysense.claim - INFO - Claim detection for request req_1758471095
+2025-09-21 21:41:37,222 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:41:37,222 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:41:37,223 - verifysense.claim - INFO - Claim 1: https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/learn-about-fake-news-to-support-children/
+2025-09-21 21:41:37,223 - verifysense.claim - INFO - Claim 1: https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/learn-about-fake-news-to-support-children/
+2025-09-21 21:41:37,494 - verifysense.factcheck - INFO - Fact-checking for request req_1758471095, claim: https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/learn-about-fake-news...
+2025-09-21 21:41:37,494 - verifysense.factcheck - INFO - Fact-checking for request req_1758471095, claim: https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/learn-about-fake-news...
+2025-09-21 21:41:37,495 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:41:37,495 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:41:40,852 - verifysense.scoring - INFO - Scoring for request req_1758471095, claim: https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/learn-about-fake-news...
+2025-09-21 21:41:40,852 - verifysense.scoring - INFO - Scoring for request req_1758471095, claim: https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/learn-about-fake-news...
+2025-09-21 21:41:40,853 - verifysense.scoring - INFO - Overall score: 49, Confidence: Mixed / Needs Verification
+2025-09-21 21:41:40,853 - verifysense.scoring - INFO - Overall score: 49, Confidence: Mixed / Needs Verification
+2025-09-21 21:41:40,853 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:41:40,853 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:41:40,856 - verifysense.scoring - INFO - Component score - source_reliability_score: 60.0
+2025-09-21 21:41:40,856 - verifysense.scoring - INFO - Component score - source_reliability_score: 60.0
+2025-09-21 21:41:40,858 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:41:40,858 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:41:40,859 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:41:40,859 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:41:40,860 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 40
+2025-09-21 21:41:40,860 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 40
+2025-09-21 21:41:40,861 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:41:40,861 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:41:40,862 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:41:40,862 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:42:53,396 - verifysense - INFO - New verification request: req_1758471173
+2025-09-21 21:42:53,399 - verifysense - INFO - Content type: image
+2025-09-21 21:42:53,405 - verifysense.extraction - INFO - Content extraction for request req_1758471173
+2025-09-21 21:42:53,405 - verifysense.extraction - INFO - Content extraction for request req_1758471173
+2025-09-21 21:42:53,410 - verifysense.extraction - INFO - Source: image OCR
+2025-09-21 21:42:53,410 - verifysense.extraction - INFO - Source: image OCR
+2025-09-21 21:42:53,416 - verifysense.extraction - INFO - Extracted content length: 133
+2025-09-21 21:42:53,416 - verifysense.extraction - INFO - Extracted content length: 133
+2025-09-21 21:43:04,815 - verifysense.claim - INFO - Claim detection for request req_1758471173
+2025-09-21 21:43:04,815 - verifysense.claim - INFO - Claim detection for request req_1758471173
+2025-09-21 21:43:04,823 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:43:04,823 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:43:04,831 - verifysense.claim - INFO - Claim 1: Error processing image: File C:\Users\adars\Desktop\Gen-AI\verifysense\backend\united-rope-461017-e4-f007b72f004a.json was not found.
+2025-09-21 21:43:04,831 - verifysense.claim - INFO - Claim 1: Error processing image: File C:\Users\adars\Desktop\Gen-AI\verifysense\backend\united-rope-461017-e4-f007b72f004a.json was not found.
+2025-09-21 21:43:05,260 - verifysense.factcheck - INFO - Fact-checking for request req_1758471173, claim: Error processing image: File C:\Users\adars\Desktop\Gen-AI\verifysense\backend\united-rope-461017-e4...
+2025-09-21 21:43:05,260 - verifysense.factcheck - INFO - Fact-checking for request req_1758471173, claim: Error processing image: File C:\Users\adars\Desktop\Gen-AI\verifysense\backend\united-rope-461017-e4...
+2025-09-21 21:43:05,261 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:43:05,261 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:43:13,899 - verifysense.scoring - INFO - Scoring for request req_1758471173, claim: Error processing image: File C:\Users\adars\Desktop\Gen-AI\verifysense\backend\united-rope-461017-e4...
+2025-09-21 21:43:13,899 - verifysense.scoring - INFO - Scoring for request req_1758471173, claim: Error processing image: File C:\Users\adars\Desktop\Gen-AI\verifysense\backend\united-rope-461017-e4...
+2025-09-21 21:43:13,900 - verifysense.scoring - INFO - Overall score: 48, Confidence: Mixed / Needs Verification
+2025-09-21 21:43:13,900 - verifysense.scoring - INFO - Overall score: 48, Confidence: Mixed / Needs Verification
+2025-09-21 21:43:13,902 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:43:13,902 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:43:13,903 - verifysense.scoring - INFO - Component score - source_reliability_score: 50
+2025-09-21 21:43:13,903 - verifysense.scoring - INFO - Component score - source_reliability_score: 50
+2025-09-21 21:43:13,905 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:43:13,905 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:43:13,907 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:43:13,907 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:43:13,914 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 50
+2025-09-21 21:43:13,914 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 50
+2025-09-21 21:43:13,916 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:43:13,916 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:43:13,918 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:43:13,918 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:43:40,600 - verifysense - INFO - New verification request: req_1758471220
+2025-09-21 21:43:40,605 - verifysense - INFO - Content type: text
+2025-09-21 21:44:00,871 - verifysense.claim - INFO - Claim detection for request req_1758471220
+2025-09-21 21:44:00,871 - verifysense.claim - INFO - Claim detection for request req_1758471220
+2025-09-21 21:44:00,872 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:44:00,872 - verifysense.claim - INFO - Number of claims detected: 1
+2025-09-21 21:44:00,873 - verifysense.claim - INFO - Claim 1: PM Modi strikes ‘Swadeshi’ chord amid H-1B visa fee, tariff hike, says ‘today, knowingly or unknowingly…’
+2025-09-21 21:44:00,873 - verifysense.claim - INFO - Claim 1: PM Modi strikes ‘Swadeshi’ chord amid H-1B visa fee, tariff hike, says ‘today, knowingly or unknowingly…’
+2025-09-21 21:44:01,400 - verifysense.factcheck - INFO - Fact-checking for request req_1758471220, claim: PM Modi strikes ‘Swadeshi’ chord amid H-1B visa fee, tariff hike, says ‘today, knowingly or unknowin...
+2025-09-21 21:44:01,400 - verifysense.factcheck - INFO - Fact-checking for request req_1758471220, claim: PM Modi strikes ‘Swadeshi’ chord amid H-1B visa fee, tariff hike, says ‘today, knowingly or unknowin...
+2025-09-21 21:44:01,432 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:44:01,432 - verifysense.factcheck - INFO - Verification sources used: 0
+2025-09-21 21:44:03,889 - verifysense.scoring - INFO - Scoring for request req_1758471220, claim: PM Modi strikes ‘Swadeshi’ chord amid H-1B visa fee, tariff hike, says ‘today, knowingly or unknowin...
+2025-09-21 21:44:03,889 - verifysense.scoring - INFO - Scoring for request req_1758471220, claim: PM Modi strikes ‘Swadeshi’ chord amid H-1B visa fee, tariff hike, says ‘today, knowingly or unknowin...
+2025-09-21 21:44:03,890 - verifysense.scoring - INFO - Overall score: 49, Confidence: Mixed / Needs Verification
+2025-09-21 21:44:03,890 - verifysense.scoring - INFO - Overall score: 49, Confidence: Mixed / Needs Verification
+2025-09-21 21:44:03,896 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:44:03,896 - verifysense.scoring - INFO - Component score - claim_match_score: 50
+2025-09-21 21:44:03,898 - verifysense.scoring - INFO - Component score - source_reliability_score: 60.0
+2025-09-21 21:44:03,898 - verifysense.scoring - INFO - Component score - source_reliability_score: 60.0
+2025-09-21 21:44:03,904 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:44:03,904 - verifysense.scoring - INFO - Component score - semantic_similarity_score: 50
+2025-09-21 21:44:03,905 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:44:03,905 - verifysense.scoring - INFO - Component score - sentiment_consistency_score: 50
+2025-09-21 21:44:03,916 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 40
+2025-09-21 21:44:03,916 - verifysense.scoring - INFO - Component score - cross_source_consistency_score: 40
+2025-09-21 21:44:03,925 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:44:03,925 - verifysense.scoring - INFO - Component score - temporal_relevance_score: 70
+2025-09-21 21:44:03,930 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0
+2025-09-21 21:44:03,930 - verifysense.scoring - INFO - Component score - fact_check_score: 35.0

@@ -46,15 +46,6 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
     """
     Calculate a credibility score for a claim based on fact checks and evidence
     using NLP models and multiple verification signals
-    
-    Args:
-        claim (str): The claim being evaluated
-        fact_checks (list): List of fact check results from Google Fact Check API
-        evidence (list): List of evidence items from web search
-        request_id (str, optional): Unique identifier for the request for tracking
-        
-    Returns:
-        dict: Score information including numerical score, confidence label, and component scores
     """
     # Generate request ID if not provided
     if not request_id:
@@ -62,7 +53,7 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
     
     logger.info(f"Calculating score for claim: '{claim[:50]}...' (Request ID: {request_id})")
     
-    # Initialize score components with default values
+    # Initialize score components
     scores = {
         'claim_match_score': 50,
         'source_reliability_score': 50,
@@ -72,17 +63,23 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
         'temporal_relevance_score': 50,
         'fact_check_score': 50
     }
-    
-    # 1. Calculate Fact Check Score based on external fact-checking services
+
+    # 1. Fact Check Score
     if fact_checks:
         fact_check_scores = []
         for check in fact_checks:
-            rating = check.get('rating', '').lower()
-            publisher = check.get('publisher', {}).get('name', '')
+            if isinstance(check, dict):
+                rating = check.get('rating', '').lower()
+                publisher = check.get('publisher', {}).get('name', '')
+                url = check.get('url', '')
+            else:
+                # If string, assume it's a URL or unknown rating
+                rating = ''
+                publisher = ''
+                url = str(check)
             
-            # Log the fact check information
-            logger.info(f"Fact check from {publisher}: Rating '{rating}'")
-            
+            logger.info(f"Fact check from {publisher or url}: Rating '{rating}'")
+
             # Convert rating to numerical score
             if 'false' in rating or 'pants on fire' in rating:
                 score = 20
@@ -95,95 +92,82 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
             elif 'true' in rating:
                 score = 90
             else:
-                score = 50  # Neutral for unknown ratings
-            
-            # Adjust score based on publisher reliability
-            publisher_domain = extract_domain(check.get('url', ''))
+                score = 50  # Neutral
+
+            # Publisher reliability
+            publisher_domain = extract_domain(url)
             publisher_reliability = SOURCE_RELIABILITY.get(publisher_domain, 0.7)
-            
-            # Weight the score by publisher reliability
             weighted_score = score * publisher_reliability
             fact_check_scores.append(weighted_score)
-        
+
         if fact_check_scores:
             scores['fact_check_score'] = sum(fact_check_scores) / len(fact_check_scores)
-    
-    # 2. Calculate Source Reliability Score
+
+    # 2. Source Reliability Score
     if evidence:
         reliability_scores = []
         for item in evidence:
-            source_url = item.get('url', '')
+            if isinstance(item, dict):
+                source_url = item.get('url', '')
+            else:
+                source_url = str(item)
+            
             domain = extract_domain(source_url)
-            
-            # Get reliability score from our database or default to medium
             reliability = SOURCE_RELIABILITY.get(domain, 0.6)
-            reliability_score = reliability * 100
-            
-            reliability_scores.append(reliability_score)
-            logger.info(f"Source reliability for {domain}: {reliability_score}")
+            reliability_scores.append(reliability * 100)
+            logger.info(f"Source reliability for {domain}: {reliability * 100}")
         
         if reliability_scores:
             scores['source_reliability_score'] = sum(reliability_scores) / len(reliability_scores)
-    
-    # 3. Calculate Semantic Similarity Score using NLP
+
+    # 3. Semantic Similarity Score
     if model and evidence:
         try:
-            # Encode claim
             claim_embedding = model.encode([claim])[0]
-            
             similarity_scores = []
             for item in evidence:
-                content = item.get('content', '')
+                content = ''
+                if isinstance(item, dict):
+                    content = item.get('content', '')
+                else:
+                    content = str(item)
                 if content:
-                    # Take a sample of the content if it's too long
                     content_sample = content[:1000]
                     content_embedding = model.encode([content_sample])[0]
-                    
-                    # Calculate cosine similarity
                     similarity = cosine_similarity([claim_embedding], [content_embedding])[0][0]
-                    
-                    # Convert to score (0-100)
-                    similarity_score = (similarity + 1) * 50  # Convert from [-1,1] to [0,100]
-                    similarity_scores.append(similarity_score)
-                    
-                    logger.info(f"Semantic similarity score: {similarity_score:.2f}")
-            
+                    similarity_scores.append((similarity + 1) * 50)
+                    logger.info(f"Semantic similarity score: {(similarity + 1) * 50:.2f}")
             if similarity_scores:
                 scores['semantic_similarity_score'] = sum(similarity_scores) / len(similarity_scores)
         except Exception as e:
             logger.error(f"Error calculating semantic similarity: {str(e)}")
-    
-    # 4. Calculate Sentiment Consistency Score
+
+    # 4. Sentiment Consistency Score
     if evidence:
         claim_sentiment = TextBlob(claim).sentiment.polarity
-        
-        sentiment_diffs = []
+        sentiment_scores = []
         for item in evidence:
-            content = item.get('content', '')
+            content = ''
+            if isinstance(item, dict):
+                content = item.get('content', '')
+            else:
+                content = str(item)
             if content:
-                # Calculate sentiment of evidence
                 evidence_sentiment = TextBlob(content[:1000]).sentiment.polarity
-                
-                # Calculate absolute difference in sentiment
-                sentiment_diff = abs(claim_sentiment - evidence_sentiment)
-                
-                # Convert to consistency score (0-100)
-                # Lower difference means higher consistency
-                consistency_score = 100 - (sentiment_diff * 50)
-                sentiment_diffs.append(consistency_score)
-                
+                consistency_score = 100 - abs(claim_sentiment - evidence_sentiment) * 50
+                sentiment_scores.append(consistency_score)
                 logger.info(f"Sentiment consistency score: {consistency_score:.2f}")
-        
-        if sentiment_diffs:
-            scores['sentiment_consistency_score'] = sum(sentiment_diffs) / len(sentiment_diffs)
-    
-    # 5. Calculate Cross-Source Consistency
+        if sentiment_scores:
+            scores['sentiment_consistency_score'] = sum(sentiment_scores) / len(sentiment_scores)
+
+    # 5. Cross-Source Consistency
     if evidence:
-        # Count high reliability sources
-        high_reliability_sources = sum(1 for item in evidence if 
-                                      SOURCE_RELIABILITY.get(extract_domain(item.get('url', '')), 0) > 0.8)
-        
-        # Calculate score based on number of high reliability sources
+        high_reliability_sources = sum(
+            1 for item in evidence
+            if SOURCE_RELIABILITY.get(
+                extract_domain(item.get('url', '') if isinstance(item, dict) else str(item)), 0
+            ) > 0.8
+        )
         if high_reliability_sources >= 3:
             scores['cross_source_consistency_score'] = 90
         elif high_reliability_sources >= 2:
@@ -192,14 +176,12 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
             scores['cross_source_consistency_score'] = 60
         else:
             scores['cross_source_consistency_score'] = 40
-        
         logger.info(f"Cross-source consistency score: {scores['cross_source_consistency_score']} (from {high_reliability_sources} high-reliability sources)")
-    
-    # 6. Calculate Temporal Relevance
-    # For now, we'll use a default value, but this could be improved with publication dates
+
+    # 6. Temporal Relevance
     scores['temporal_relevance_score'] = 70
-    
-    # Calculate final score as weighted average of components
+
+    # Weighted Final Score
     weights = {
         'fact_check_score': 0.25,
         'source_reliability_score': 0.2,
@@ -208,15 +190,11 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
         'cross_source_consistency_score': 0.15,
         'temporal_relevance_score': 0.1
     }
-    
-    # Calculate weighted score
-    weighted_scores = [scores[key] * weights[key.replace('_score', '')] for key in scores]
-    final_score = sum(weighted_scores)
-    
-    # Round to nearest integer
-    final_score = round(final_score)
-    
-    # Determine confidence label based on score
+    # Match weights correctly with score keys
+    weighted_scores = [scores[key] * weights[key] for key in weights]
+    final_score = round(sum(weighted_scores))
+
+    # Confidence Label
     if final_score >= 75:
         confidence_label = 'Likely True'
     elif final_score >= 60:
@@ -227,17 +205,17 @@ def calculate_score(claim, fact_checks, evidence, request_id=None):
         confidence_label = 'Somewhat False'
     else:
         confidence_label = 'Mixed / Needs Verification'
-    
-    # Log the final score and components
+
     logger.info(f"Final score: {final_score} ({confidence_label})")
     logger.info(f"Score components: {json.dumps(scores)}")
-    
+
     return {
         'score': final_score,
         'confidence_label': confidence_label,
         'components': scores,
         'request_id': request_id
     }
+
 
 def extract_domain(url):
     """Extract domain from URL"""
