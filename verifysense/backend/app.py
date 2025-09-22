@@ -20,6 +20,9 @@ CORS(app)
 @app.route('/api/health', methods=['GET'])
 def health_check():
     return jsonify({'status': 'healthy', 'message': 'VerifySense API is running'})
+@app.route("/health")
+def health():
+    return "OK", 200
 
 @app.route('/api/verify', methods=['POST'])
 def verify():
