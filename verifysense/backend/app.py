@@ -21,6 +21,10 @@ CORS(app)
 def health_check():
     return jsonify({'status': 'healthy', 'message': 'VerifySense API is running'})
 
+@app.route("/health")
+def health():
+    return "OK", 200
+
 @app.route('/api/verify', methods=['POST'])
 def verify():
     data = request.json
@@ -78,5 +82,5 @@ def submit_feedback():
     return jsonify({'status': 'success', 'message': 'Feedback received'})
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    port = int(os.environ.get('PORT', 5050))
+    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
